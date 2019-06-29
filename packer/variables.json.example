@@ -1,5 +1,5 @@
 {
     "project_id": "catfish-999999",
-    "image_family": "default_image_family",
+    "image_family": "imgfamily",
     "machine_type": "default_machine_type"
 }
