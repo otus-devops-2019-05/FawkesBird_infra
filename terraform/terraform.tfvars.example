@@ -1,0 +1,5 @@
+project = "k-catfish-123456789"
+disk_image = "r-b-999"
+public_key_path = "/Users/user_example/.ssh/key.pub"
+private_key_path = "/Users/user_example/.ssh/key"
+domain_zone = "europe"
