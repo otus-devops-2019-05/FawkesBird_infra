@@ -26,12 +26,12 @@ resource "google_compute_instance" "app" {
   }
 
   metadata {
-    ssh-keys = "evg-pc:${file(var.public_key_path)}"
+    ssh-keys = "appuser:${file(var.public_key_path)}"
   }
 
   connection {
     type        = "ssh"
-    user        = "evg-pc"
+    user        = "appuser"
     agent       = false
     private_key = "${file(var.private_key_path)}"
   }
