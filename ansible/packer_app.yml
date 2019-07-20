@@ -1,0 +1,11 @@
+- name: Packages for App-instances
+  hosts: all
+  become: true
+
+  tasks:
+  - name: Install 'ruby', 'ruby-bundler' and 'build-essential'
+    apt: "name={{ item }} state=present"
+    with_items:
+      - ruby-full
+      - ruby-bundler
+      - build-essential
